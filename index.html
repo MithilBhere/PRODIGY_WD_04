@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f9b6fbef6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1f.png" alt="">
+                <ul id = "sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!--<li><a href="#">Skills</a></li>-->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick ="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <p>Flutter Developer</p>
+                <h1>Hi, I'm <span>Mithil Bhere</span> From India </h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class ="subheading">About Me</h1>
+                    <p class = "info">Hi, I'm Mithil Bhere, a passionate web and mobile app developer with a strong enthusiasm for building innovative and user-friendly applications. With a solid foundation in web development, I've expanded my skill set to include Flutter development, allowing me to create seamless and engaging experiences across multiple platforms.
+
+                        As a web developer, I've honed my skills in [list specific technologies you're proficient in, e.g., HTML, CSS, JavaScript, React, etc.]. I'm dedicated to crafting responsive, efficient, and scalable web applications that meet the highest standards of quality and usability.
+                        
+                        In addition to web development, I've also ventured into the world of Flutter, where I've developed a strong proficiency in building natively compiled applications for mobile, web, and desktop from a single codebase. I'm excited about the possibilities that Flutter offers, and I'm always looking for new ways to push the boundaries of what's possible with this technology.
+                        
+                        When I'm not coding, you can find me [insert personal interests or hobbies, e.g., reading, hiking, playing music, etc.]. I'm always eager to connect with like-minded individuals and collaborate on projects that inspire and challenge me.
+                        
+                        Feel free to explore my portfolio, and let's get in touch if you'd like to discuss potential projects or opportunities!</p>
+                    <div class="tab_title">
+                        <p class = "tab_link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tab_link" onclick="opentab('education')">Education</p>
+                        <p class = "tab_link " onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab_contains active_tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Developing the Web Page and Website</li>
+                            <li><span>Flutter Developer</span><br>Developing the App for Both Android and iOS </li>
+                        </ul>
+                    </div>
+                    <div class="tab_contains" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Computer Engineering | Konkan Gyanpeeth College Of Engineering </li>
+                            <li><span>2021</span><br>XII (CBSE) | Jindal Vidya Mandir Vasind </li>
+                            <li><span>2019</span><br>X (CBSE) | Jindal Vidya Mandir Vasind </li>
+                        </ul>
+                    </div>
+                    <div class="tab_contains" id="experience">
+                        <ul>
+                            <li><span>June 2024 - July 2024</span><br>Internship at Prodigy Infotech</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub_title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/parking.jpg" >
+                    <div class="layer">
+                        <h3>Parking Management System</h3>
+                        <p>
+                            This Project is all about Parking Management System. In this project we have use CSS HTML JAVASCRIPT PHP and SQLite
+                        </p>
+                        <a href="https://github.com/MithilBhere/Parking-Management-System"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/College.jpg" >
+                    <div class="layer">
+                    <h3>College Admission Management System</h3>
+                    <p>In this we have created the College Admission Management system. by Mithil Bhere. In this we have use the Intellij IDEA.and MySQL WorkBench.. </p>
+                    <a href="https://github.com/MithilBhere/CAMS"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+                <div class="work">
+                    <img src="images/Calculator.jpg" >
+                    <div class="layer">
+                    <h3>College Admission Management System</h3>
+                    <p>This is the Calculator app Made on Flutter.
+
+                        Ths is not a scientific calculator but a normal calci.
+                        
+                        It can run on both Android and iOS.
+                        
+                        In this there is option of Dark Theme</p>
+                    <a href="https://github.com/MithilBhere/Calculator-Application-"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Contact-->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h1 class="sub_title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i> mithilb@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9875463217</p>
+                    <div class="social_icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact_right">
+                    <form name = "submit-to-google-sheet">
+                        <input type="text" name = 'Name' placeholder="Your Name" required>
+                        <input type="email" name = "Email" placeholder="Your Email" required>
+                        <textarea name="message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Mithil Personal Portfolio @2024 </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
